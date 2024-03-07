@@ -39,21 +39,21 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <div>
       <h1>Search Bar</h1>
-      <form className={form} onSubmit={handleSubmit}>
-        <button type="submit" className={button}>
+      <form className="form" onSubmit={handleSubmit}>
+        <button type="submit" className="button">
           Submit
         </button>
         <input
           type="text"
           value={query}
           onChange={handleInputChange}
-          className={input}
+          className="input"
           placeholder="Search for movies..."
         />
       </form>
       {error && <div>{error}</div>}
       {loading && <div>Loading...</div>}
-      <ul className={resultsList}>
+      <ul className="resultsList">
         {movies.map(movie => (
           <li key={movie.id}>
             <Link to={`/movies/${movie.id}`}>
