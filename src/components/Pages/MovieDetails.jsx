@@ -34,7 +34,7 @@ const MovieDetails = () => {
       {isLoading && <div className={styles.loading}>Loading...</div>}
       {!isLoading && movieDetails && (
         <div className={styles.movieDetails}>
-          <button onClick={() => navigate("/goit-react-hw-05-movies")} className={styles.button}>
+          <button onClick={() => navigate(-1)} className={styles.button}>
             Go back
           </button>
           <h1 className={styles.movieTitle}>{movieDetails.title}</h1>

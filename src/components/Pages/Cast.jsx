@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import useFetchApi from '../FetchApi/FetchApi';
+import useFetchApi from '../FetchApi/fetchApi';
 import styles from './Cast.module.css';
 
 const Cast = () => {
